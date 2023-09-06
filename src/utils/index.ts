@@ -34,7 +34,7 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 export const generateCarImageUrl = (car: car, angle?: string) => {
   const url = new URL("https://cdn.imagin.studio/get-image");
   const { make, year, model } = car;
-  url.searchParams.append("customer", "hrjavascript-mastery");
+  url.searchParams.append("customer", process.env.IMAGIN_STUDIO_CUSTOMER!);
   url.searchParams.append("make", make);
   url.searchParams.append("modelFamily", model.split(" ")[0]);
   url.searchParams.append("zoomType", "fullscreen");
