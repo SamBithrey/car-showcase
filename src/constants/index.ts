@@ -42,7 +42,7 @@ export const manufacturers: string[] = [
   "Volvo",
 ];
 
-export const yearsOfProduction: productionYear[] = [
+export const yearsOfProduction: optionProps[] = [
   { title: "Year", value: "" },
   { title: "2015", value: "2015" },
   { title: "2016", value: "2016" },
@@ -55,7 +55,7 @@ export const yearsOfProduction: productionYear[] = [
   { title: "2023", value: "2023" },
 ];
 
-export const fuels: fuel[] = [
+export const fuels: optionProps[] = [
   {
     title: "Fuel",
     value: "",

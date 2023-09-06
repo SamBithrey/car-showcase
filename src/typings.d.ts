@@ -1,9 +1,4 @@
-interface productionYear {
-  title: string;
-  value: string;
-}
-
-interface fuel {
+interface optionProps {
   title: string;
   value: string;
 }
@@ -19,6 +14,8 @@ interface footerLink {
 }
 
 interface car {
+  make: string;
+  model: string;
   city_mpg: number;
   class: string;
   combination_mpg: number;
@@ -27,8 +24,14 @@ interface car {
   drive: string;
   fuel_type: string;
   highway_mpg: number;
-  make: string;
-  model: string;
   transmission: string;
   year: number;
+}
+
+interface filterProps {
+  manufacturer: string;
+  year: number;
+  fuel: string;
+  limit: number;
+  model: string;
 }
